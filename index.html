@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,11 +15,28 @@
 
 <body>
     <div id="wrapper">
+        <header id="searchTerms" class="row"></header>
 
+        <section class="row">
+            <article class="col-lg-3">
+                <p>
+                    <h5 class="row">Add a Topic</h5>
+                </p>
+                <p>
+                    <input id="searchBar" class="row"></input>
+                </p>
+                <button id="manualSearch" class="row">Search!</button>
+            </article>
+            
+            <article id="imageHolder" class="col-lg-9"></article>
+        </section>
     </div>
 
     <!--jQuery-->
-    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--App Javascript-->
+    <script src="Assets/Javascript/app.js"></script>
 </body>
 
 </html>
